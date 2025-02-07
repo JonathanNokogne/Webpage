@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body {
+            background: url('G.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #0056b3;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #003d80;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+        <a href="home.html" class="logo-container">
+        <img src="B.png" alt="Georgian College Logo">
+        </a>
+        
+    </div>
+    <div class="login-container">
+        <h2>Staff Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button class="btn" onclick="login()">Login</button>
+        <p id="error-msg" style="color: red; display: none;">Invalid credentials!</p>
+    </div>
+
+    <script>
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            // List of valid staff users
+            const users = [
+                { username: "admin", password: "password123" },
+                { username: "staff1", password: "staffpass1" },
+                { username: "staff2", password: "staffpass2" },
+                { username: "staff3", password: "staffpass3" },
+                { username: "staff4", password: "staffpass4" }
+            ];
+
+            // Check if user exists
+            let validUser = users.find(user => user.username === username && user.password === password);
+
+            if (validUser) {
+                sessionStorage.setItem("loggedIn", "true"); // Store login session
+                sessionStorage.setItem("staffUser", username); // Store the username
+                window.location.href = "admin.html"; // Redirect to staff page
+            } else {
+                document.getElementById("error-msg").style.display = "block"; // Show error
+            }
+        }
+    </script>
+
+</body>
+</html>

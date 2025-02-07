@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgian Food Assistance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+         body {
+        background: url('G.jpg') no-repeat center center/cover;
+        background-attachment: fixed; /* Keeps background fixed while scrolling */
+        font-family: Arial, sans-serif;
+    }
+        
+        /* Pinned Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+        }
+
+            /* Full-Screen Hero Section */
+    .hero {
+        background: url('https://source.unsplash.com/1600x900/?healthy-food,students') no-repeat center center/cover;
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero-content {
+        background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 45px; /* Bigger text for better impact */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Call-to-Action Button */
+    .btn {
+        background: #0056b3;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background: #003d80;
+    }
+
+        /* Footer */
+        footer {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html" class="logo-container">
+        <img src="B.png" alt="Georgian College Logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="food_resources.html">Food Resources</a>
+            <a href="community_support.html">Community Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Helping Students Access Healthy Food</h1>
+            <p>We connect students with food resources, community support, and volunteering opportunities.</p>
+            <a href="food_resources.html" class="btn">Explore Food Resources</a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>Connect with us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="food_resources.html">Food Resources</a>
+            <a href="community_support.html">Community Support</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: info@georgianfoodsupport.com</p>
+            <p>Phone: (705) 123-4567</p>
+        </div>
+    </footer>
+
+</body>
+</html>

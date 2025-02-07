@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+  body {
+        background: url('G.jpg') no-repeat center center/cover;
+        background-attachment: fixed; /* Keeps background fixed while scrolling */
+        font-family: Arial, sans-serif;
+    }
+        /* Pinned Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+        }
+
+        .container {
+            padding: 100px 50px 50px;
+        }
+
+        .support-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .support-list li {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html" class="logo-container">
+        <img src="B.png" alt="Georgian College Logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="food_resources.html">Food Resources</a>
+            <a href="community_support.html">Community Support</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Community Support & Volunteering</h2>
+        <ul class="support-list">
+            <li>📢 Georgian Volunteers - Help organize food drives</li>
+            <li>💡 Student Nutrition Club - Learn about healthy eating</li>
+            <li>🤝 Community Outreach - Assist local food banks</li>
+            <li>🌍 International Student Support - Connect with others</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Connect with us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="food_resources.html">Food Resources</a>
+            <a href="community_support.html">Community Support</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: info@georgianfoodsupport.com</p>
+            <p>Phone: (705) 123-4567</p>
+        </div>
+    </footer>
+
+</body>
+</html>
